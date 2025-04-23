@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL Arsenal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ALL Arsenal - little "Emirates"</h1>
+        <nav>
+            <ol>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#ticketpurchase">Purchase Ticket</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <img src="https://images.pexels.com/photos/17160691/pexels-photo-17160691/free-photo-of-facade-of-emirates-stadium-in-london.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Emirates stadium">
+        <p class="px10" id="home">
+            Arsenal is the football team I love.<br>
+            My favourite Arsenal players are:<br>
+        </p>
+        <ul type="i">
+            <li class="ul_li">Kieran Tierney</li>
+            <li class="ul_li">Alessia Russo</li>
+            <li class="ul_li">Gabriel Jesus</li>
+            <li class="ul_li">Stina Blackstenius</li>
+            <li class="ul_li">Gabriel Martinelli</li>
+        </ul>
+    
+        <p id="about">
+            Together with my friends, who are also Arsenal lovers, we have created little "Emirates" - a place where arsenal fans can meet and watch matches together.<br>
+            <br>
+            <h4>Important Information:</h4>
+            <ul>
+                <li class="ul_li">The place is located at Nairobi - Two rivers, first floor.</li>
+                <li class="ul_li">A match ticket costs Kshs. 100 and can ONLY be purchased by adults(persons ove 18yrs old).</li>
+                <li class="ul_li">To ensure authenticity of ticket owner, the owner sets a password which will be required at the entrance</li>
+                <li class="ul_li">Kids are allowed to watch matches, but only when accompanied by an adult who purchased the ticket for him/her</li>
+                <li>No food substances are allowed, if you need to buy anything buy from the place - which only sells non-alcoholic substances at normal price</li>
+            </ul> <br>
+             <br>
+        </p>
+        <div class="flexcontainer">
+            <div>
+                <b>Below are our contact information:</b>
+                <table id="contact">
+                    <caption>Contact information</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Mobile number</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nordine Oui</td>
+                            <td>P.O. Box 2345-00200</td>
+                            <td>0112823684</td>
+                            <td>nordineoui@spmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>William Op</td>
+                            <td>P.O. Box 2478-00100</td>
+                            <td>0727393783</td>
+                            <td>wop@yahoo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Miriam Ay</td>
+                            <td>P.O. Box 1948-00300</td>
+                            <td>0782927283</td>
+                            <td>miriay@outlook.com</td>
+                        </tr>
+                        <tr>
+                            <td>Sylva Op</td>
+                            <td>P. O. Box 3984-00400</td>
+                            <td>0734587292</td>
+                            <td>sylvaop@yahoo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Lotte Moy</td>
+                            <td>P.O. Box 5890-00500</td>
+                            <td>07234567890</td>
+                            <td>lwm@ggmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p id="ticketpurchase">
+                    To register for the next matches. Kindly fill in the form below:
+                </p>
+                <form action="">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Full Name: </label><br>
+                        <input type="text" id="name" placeholder="Enter your name" required><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" placeholder="Enter your email" required><br><br>
+                        <label for="password">Password: /*This is a unique identifier to ensure authenticity of ticket owner</label><br>
+                        <input type="password" id="password" placeholder="Enter your password"><br><br>
+                        <label for="date">Date of birth: /*Only above 18 are eligible to purchase tickets</label><br>
+                        <input type="date" name="dateob" id="dateob">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Just Arsenal Info</legend>
+                        <label for="">Which of the following identifies your relationship with arsenal?</label><br>
+                        <input type="checkbox" name="relationship" id="">I am an Arsenal fan <br>
+                        <input type="checkbox" name="relationship" id="">I love how arsenal play <br>
+                        <input type="checkbox" name="relationship" id="">I love an/some arsenal player(s) <br>
+                        <input type="checkbox" name="relationship" id="">My favourite person is an arsenal fan <br><br>
+                        <label>Do you think we are going to win the league this season?</label><br>
+                        <input type="radio" name="winleague" id="">Yes <br>
+                        <input type="radio" name="winleague" id="">No <br><br>
+                        <label>Favourite Arsenal kit this season:</label><br>
+                        <select name="kit" id="">
+                            <option value="1">Classic red and white home kit</option>
+                            <option value="2">Kenyan flag inspired away kit</option>
+                            <option value="3">Ocean vibes third kit</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ticket Info and Pay</legend>
+                        <label>How many tickets would you like to purchase</label>
+                        <select name="ticketno" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select><br><br>
+                        <button>PAY</button>
+                    </fieldset>
+            
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
